@@ -1,0 +1,70 @@
+ <?xml version="1.0" encoding="utf-8"?>
+ <Autodiscover xmlns="http://schemas.microsoft.com/exchange/autodiscover/responseschema/2006">
+   <Response xmlns="http://schemas.microsoft.com/exchange/autodiscover/outlook/responseschema/2006a">
+     <User>
+       <DisplayName>User Display Name</DisplayName>
+       <LegacyDN>/o=microsoft/ou=Contoso/cn=Recipients/cn=486021</LegacyDN>
+       <AutoDiscoverSMTPAddress>user@Contoso.com</AutoDiscoverSMTPAddress>
+       <DeploymentId>30c3a927-42aa-5de8-91e3-8e5b4655ed00</DeploymentId>
+     </User>
+     <Account>
+       <AccountType>email</AccountType>
+       <Action>settings</Action>
+       <Protocol>
+         <Type>EXCH</Type>
+         <Server>ExchangeServer.Contoso.com</Server>
+         <ServerDN>/o=Contoso/ou=Exchange Administrative Group (GZZHBOHF23SPELT)/
+            cn=Configuration/cn=Servers/cn=ExchangeServer</ServerDN>
+         <ServerVersion>720180F0</ServerVersion>
+         <MdbDN>/o=Contoso/ou=Exchange Administrative Group (GZZHBOHF23SPELT)/
+            cn=Configuration/cn=Servers/cn=ExchangeServer/cn=Microsoft Private MDB</MdbDN>
+         <PublicFolderServer>PublicFolderServer.Contoso.com</PublicFolderServer>
+         <AD>ADServer.Contoso.com</AD>
+         <ASUrl>https://mail.Contoso.com/ews/exchange.asmx</ASUrl>
+         <EwsUrl>https://mail. Contoso.com/ews/exchange.asmx</EwsUrl>
+         <SharingUrl>https://machine.domain.Contoso.com/EWS/Exchange.asmx</SharingUrl>
+         <OOFUrl>https://mail. Contoso.com/ews/exchange.asmx</OOFUrl>
+         <UMUrl>https://mail. Contoso.com/unifiedmessaging/service.asmx</UMUrl>
+         <OABUrl>https://mail. Contoso.com/oab/68b5509d-87f6-4e78-a9ff-74d7d9572787/</OABUrl>
+       </Protocol>
+       <Protocol>
+         <Type>EXPR</Type>
+         <Server>RPCHTTPServer.Contoso.com</Server>
+         <SSL>On</SSL>
+         <AuthPackage>Ntlm</AuthPackage>
+         <ASUrl>https://mail.Contoso.com/ews/exchange.asmx</ASUrl>
+         <EcpUrl>https://mail.Contoso.com/ecp</EcpUrl>
+         <EcpUrl-um>?p=customize/voicemail.aspx&amp;exsvurl=1</EcpUrl-um>
+         <EcpUrl-aggr>?p=personalsettings/EmailSubscriptions.slab&amp;exsvurl=1</EcpUrl-aggr>
+         <EcpUrl-sms>?p=sms/textmessaging.slab&amp;exsvurl=1</EcpUrl-sms>
+         <EcpUrl-publish>customize/calendarpublishing.slab?exsvurl=1&amp;FldID=&lt;FldID&gt;</EcpUrl-publish>
+         <EcpUrl-mt>PersonalSettings/DeliveryReport.aspx?
+           exsvurl=1&amp;IsOWA=&lt;IsOWA&gt;&amp;MsgID=&lt;
+           MsgID&gt;&amp;Mbx=&lt;Mbx&gt;&amp;Sender=&lt;Sender&gt;</EcpUrl-mt>
+         <EcpUrl-ret>?p=organize/retentionpolicytags.slab&amp;exsvurl=1</EcpUrl-ret>
+         <EwsUrl>https://mail.Contoso.com/ews/exchange.asmx</EwsUrl>
+         <OOFUrl>https://mail.Contoso.com/ews/exchange.asmx</OOFUrl>
+         <UMUrl>https://mail.Contoso.com/unifiedmessaging/service.asmx</UMUrl>
+         <OABUrl>https://mail.Contoso.com/oab/58b5509d-87f6-4e78-a9ff-74d7d9572787/</OABUrl>
+       </Protocol>
+       <Protocol>
+         <Type>WEB</Type>
+         <External>
+           <OWAUrl AuthenticationMethod="Fba">https://mail.Contoso.com/owa</OWAUrl>
+           <Protocol>
+             <Type>EXPR</Type>
+             <ASUrl>https://mail.Contoso.com/ews/exchange.asmx</ASUrl>
+           </Protocol>
+         </External>
+         <Internal>
+           <OWAUrl AuthenticationMethod="Ntlm, WindowsIntegrated">https:/Internal.mail.Contoso.com/owa</OWAUrl>
+           <OWAUrl AuthenticationMethod="Basic, Fba">https://mail.Contoso.com/owa</OWAUrl>
+           <Protocol>
+             <Type>EXCH</Type>
+             <ASUrl>https://mail.Contoso.com/ews/exchange.asmx</ASUrl>
+           </Protocol>
+         </Internal>
+       </Protocol>
+     </Account>
+   </Response>
+ </Autodiscover>
